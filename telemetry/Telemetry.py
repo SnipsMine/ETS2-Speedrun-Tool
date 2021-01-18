@@ -1,10 +1,10 @@
-from Truck import TruckValues
-from TrailerValues import TrailerValues
-from CommonValues import CommonValues
-from ControlValues import ControlValues
-from JobValues import JobValues
-from NavigationValues import NavigationValues
-from SpecialEventsValues import SpecialEventsValues
+from telemetry.Truck import TruckValues
+from telemetry.TrailerValues import TrailerValues
+from telemetry.CommonValues import CommonValues
+from telemetry.ControlValues import ControlValues
+from telemetry.JobValues import JobValues
+from telemetry.NavigationValues import NavigationValues
+from telemetry.SpecialEventsValues import SpecialEventsValues
 
 
 class Telemetry:

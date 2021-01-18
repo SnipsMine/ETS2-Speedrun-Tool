@@ -1,4 +1,4 @@
-from WheelValues import WheelValues
+from telemetry.WheelValues import WheelValues
 
 
 class CurrentValues:

@@ -1,4 +1,4 @@
-from WheelConstants import WheelsConstants
+from telemetry.WheelConstants import WheelsConstants
 
 
 class ConstantValues:

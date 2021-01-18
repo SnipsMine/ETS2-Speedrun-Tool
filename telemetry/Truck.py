@@ -1,6 +1,6 @@
-from TruckConstants import ConstantValues
-from TruckCurrent import CurrentValues
-from TruckPositioning import Positioning
+from telemetry.TruckConstants import ConstantValues
+from telemetry.TruckCurrent import CurrentValues
+from telemetry.TruckPositioning import Positioning
 
 
 class TruckValues:

@@ -1,5 +1,5 @@
-from WheelValues import WheelValues
-from WheelConstants import WheelsConstants
+from telemetry.WheelValues import WheelValues
+from telemetry.WheelConstants import WheelsConstants
 
 
 class TrailerValues:

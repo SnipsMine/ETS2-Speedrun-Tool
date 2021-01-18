@@ -1,2 +1,1 @@
-from Telemetry import Telemetry
-
+from telemetry.Telemetry import Telemetry
