@@ -10,6 +10,7 @@ class CurrentValues:
     electric_enabled = None
     engine_enabled = None
     position_value = None
+    acceleration_values = None
 
     class MotorValues:
         gear_values = None
@@ -38,7 +39,7 @@ class CurrentValues:
         oil_pressure = None
         oil_temperature = None
         water_temperature = None
-        BatteryVoltage = None
+        battery_voltage = None
         odometer = None
         wipers = None
         cruise_control = None
@@ -48,11 +49,14 @@ class CurrentValues:
         fuel_value = None
         warning_values = None
 
-        class Speed:
+        class Movement:
             value = None
+            kph = None
+            mph = None
 
-        class CruiseControlSpeed:
-            value = None
+            def calculate_speed(self):
+                self.kph = self.value * 3.6
+                self.mph = self.value * 2.25
 
         class FuelValue:
             amount = None
@@ -69,8 +73,8 @@ class CurrentValues:
             battery_voltage = None
 
         def __init__(self):
-            self.speed = self.Speed()
-            self.cruise_control_speed = self.CruiseControlSpeed()
+            self.speed = self.Movement()
+            self.cruise_control_speed = self.Movement()
             self.fuel_value = self.FuelValue()
             self.warning_values = self.WarningValues()
 
@@ -110,3 +114,4 @@ class CurrentValues:
         self.dashboard_values = self.DashboardValues()
         self.light_values = self.LightValues()
         self.damage_values = self.DamageValues()
+        self.acceleration_values = self.AccelerationValues()

@@ -5,7 +5,7 @@ class ControlValues:
 
     class InputValues:
         steering = None
-        Throttle = None
+        throttle = None
         brake = None
         clutch = None
 
